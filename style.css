@@ -258,28 +258,22 @@ h4 {
 h6 {
   font-style: italic; }
 
-p {
-  margin-bottom: 1.5em; }
-
 dfn, cite, em, i {
   font-style: italic; }
 
 blockquote {
-  margin: 0 1.5em; }
+  font-size: 20px;
+  font-size: 1.25rem; }
 
 address {
-  margin: 0 0 1.5em; }
+  font-size: 15px;
+  font-size: 0.9375rem; }
 
 pre {
-  background: #eee;
   font-family: "Courier 10 Pitch", Courier, monospace;
   font-size: 15px;
   font-size: 0.9375rem;
-  line-height: 1.6;
-  margin-bottom: 1.6em;
-  max-width: 100%;
-  overflow: auto;
-  padding: 1.6em; }
+  line-height: 1.6; }
 
 code, kbd, tt, var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
@@ -287,11 +281,9 @@ code, kbd, tt, var {
   font-size: 0.9375rem; }
 
 abbr, acronym {
-  border-bottom: 1px dotted #666;
   cursor: help; }
 
 mark, ins {
-  background: #fff9c0;
   text-decoration: none; }
 
 big {
