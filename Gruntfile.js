@@ -1,4 +1,5 @@
 'use strict';
+
 module.exports = function(grunt) {
  
     // load all tasks
@@ -8,10 +9,7 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
         watch: {
             files: ['sass/*.scss'],
-            tasks: 'sass:dev',
-            options: {
-                livereload: true,
-            },
+            tasks: 'sass:dev'
         },
         sass: {
             dev: {
@@ -19,7 +17,7 @@ module.exports = function(grunt) {
                     style : 'expanded'
                 },
                 files: {
-                    'style.css':'sass/style.scss',
+                    'style.css':'sass/style.scss'
                 }
             },
             release: {
@@ -27,9 +25,9 @@ module.exports = function(grunt) {
                     style : 'expanded'
                 },
                 files: {
-                    'style.css':'sass/style.scss',
+                    'style.css':'sass/style.scss'
                 }
-            },
+            }
         },
         autoprefixer: {
             options: {
@@ -45,16 +43,16 @@ module.exports = function(grunt) {
                 config: '.csscomb.json'
             },
             files: {
-                'style.css': ['style.css'],
+                'style.css': ['style.css']
             }
         },
         concat: {
             release: {
                 src: [
                     'js/skip-link-focus-fix.js',
-                    'js/navigation.js',
+                    'js/navigation.js'
                 ],
-                dest: 'js/combined.min.js',
+                dest: 'js/combined.min.js'
             }
         },
         uglify: {

@@ -148,3 +148,9 @@ require get_template_directory() . '/inc/jetpack.php';
  * Load Slideshow.
  */
 require get_template_directory() . '/inc/item-slideshow.php';
+
+/**
+ * Item Header.
+ */
+require get_template_directory() . '/inc/item-header.php';
+

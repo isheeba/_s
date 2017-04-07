@@ -1,2 +1,8 @@
 <?php
-// code to enqueue bxslider's js and css only on singular templates (single post, single custom post type, etc)
+
+function _s_slideshow_scripts(){
+	wp_register_script('bxslider', STYLESHEETPATH . 'js/bx-slider.js');
+	wp_enqueue_script('bxslider');
+}
+
+add_action( 'wp_enqueue_scripts', '_s_slideshow_scripts' );
