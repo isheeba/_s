@@ -1,5 +1,5 @@
 <header class="entry-header">
-		<?php _s_location(); ?>
+		<?php saurabh_theme_location(); ?>
 		<?php
 		if ( is_single() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
@@ -10,7 +10,7 @@
 		if ( 'item' === get_post_type() ) :
 			?>
 			<div class="entry-meta">
-			<?php _s_posted_on(); ?>
+			<?php saurabh_theme_posted_on(); ?>
 			</div><!-- .entry-meta -->
 			<?php endif;
 		?>
