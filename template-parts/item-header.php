@@ -7,12 +7,12 @@
 			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
 
-		if ( 'item' === get_post_type() ) :
+		if ( 'handmedown' === get_post_type() ) {
 			?>
 			<div class="entry-meta">
-			<?php saurabh_theme_posted_on(); ?>
+					<?php saurabh_theme_posted_on(); ?>
 			</div><!-- .entry-meta -->
-			<?php endif;
+		<?php }
 		?>
 </header><!-- .entry-header -->
 
