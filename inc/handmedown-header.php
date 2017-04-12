@@ -12,8 +12,8 @@ function saurabh_theme_location() {
 
 	global $post_id;
 
-	$locality = get_post_meta( $post_id, '_hmd_locality', true );
-	$region = get_post_meta( $post_id, '_hmd_region', true );
+	$locality = get_post_meta( $post_id, 'saurabh_theme_locality', true );
+	$region = get_post_meta( $post_id, 'saurabh_theme_region', true );
 	?>
 	<address itemprop="location" itemscope itemtype="http://schema.org/Place">
 			<p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
@@ -23,14 +23,6 @@ function saurabh_theme_location() {
 			</p>
 	</address>
 	<?php
-}
-
-/**
- * Enqueues font awesome from a CDN
- */
-function saurabh_theme_enqueue_fa(){
-	wp_register_style('fontawesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
-	wp_enqueue_style('fontawesome');
 }
 
 // will contain code to display meta box on the backend

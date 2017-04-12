@@ -120,6 +120,11 @@ function saurabh_theme_scripts() {
 add_action( 'wp_enqueue_scripts', 'saurabh_theme_scripts' );
 
 /**
+ * Load Fontawesome.
+ */
+require get_template_directory() . '/inc/fontawesome.php';
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
@@ -147,10 +152,12 @@ require get_template_directory() . '/inc/jetpack.php';
 /**
  * Load Slideshow.
  */
-require get_template_directory() . '/inc/item-slideshow.php';
+require get_template_directory() . '/inc/handmedown-slideshow.php';
 
 /**
  * Item Header.
  */
-require get_template_directory() . '/inc/item-header.php';
+require get_template_directory() . '/inc/handmedown-header.php';
+
+
 
