@@ -17,7 +17,9 @@
 		<?php get_template_part( 'template-parts/handmedown', 'pricing' ); ?>
 
 		<?php get_template_part( 'template-parts/handmedown', 'details' ); ?>
-
+		
+		<?php get_template_part( 'template-parts/handmedown', 'description' ); ?>
+		
 		<?php //get_template_part( 'template-parts/handmedown', 'seller-info' ); ?>
 
 		<?php //get_template_part( 'template-parts/handmedown', 'footer' ); ?>
