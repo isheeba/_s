@@ -1,5 +1,7 @@
 <?php
 /*
+ Below fields to be retrieved from item meta and displayed.
+
 "Age Range ( _ years to _ years)* => 2 inputs
 Brand => Free text
 Model => Free text
@@ -7,7 +9,6 @@ Size/ Dimensions => Free Text
 Included Accessories => Free Text,
 Warranty Left => _ mo/year (toggle)
 Availability Timings of Seller => metas"
-
  */
 
 // Retrieve the "From and To" years of the item.

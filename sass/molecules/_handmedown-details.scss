@@ -1,10 +1,42 @@
 /*
-"Age Range ( _ years to _ years)* => 2 inputs
-Brand => Free text
-Model => Free text
-Size/ Dimensions => Free Text
-Included Accessories => Free Text,
-Warranty Left => _ mo/year (toggle)
-Availability Timings of Seller => metas"
+<section class="hmd-details">
+	<div itemprop="property" itemscope itemtype="http://meta.schema.org/Property" class="hmd-meta">
+		<span itemprop="typicalAgeRange" class="hmd-age-range">
+			<?php echo "$yrs_from - $yrs_to"; ?>
+		</span>
+		<span itemprop="brand" class="hmd-brand"> <?php echo $brand; ?> </span>
+		<span itemprop="model" class="hmd-model"> <?php echo $model; ?> </span>
+		<span itemprop="dimension" class="hmd-dimension"> <?php echo $dimension; ?> </span>
+		<span itemprop="accessories" class="hmd-accessories"> <?php echo $accessories; ?> </span>
+		<span itemprop="warranty" class="hmd-warranty">
+			<?php echo "$warranty_mon, $warranty_yr"; ?>
+		</span>
+	</div>
+</section>
 */
+
+section.hmd-details{
+	div.hmd-meta{
+
+		span.hmd-age-range{
+
+		}
+		span.hmd-brand{
+
+		}
+		span.hmd-model{
+
+		}
+		span.hmd-dimension{
+
+		}
+		span.hmd-accessories{
+
+		}
+		span.hmd-warranty{
+
+		}
+	}
+}
+
 
