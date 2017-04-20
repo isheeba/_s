@@ -1,37 +1,35 @@
 'use strict';
+
 module.exports = function(grunt) {
 
 	// load all tasks
 	require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});
 
     grunt.initConfig({
-		pkg: grunt.file.readJSON('package.json'),
-		watch: {
-			files: ['sass/*.scss'],
-			tasks: 'sass:dev',
-			options: {
-				livereload: true,
-			},
-		},
-		sass: {
-			dev: {
-		  		options : {
-			  		style : 'expanded'
-			  	},
-			  	files: {
-					'style.css':'sass/style.scss',
-				}
-			},
-			release: {
-		  		options : {
-			  		style : 'expanded'
-			  	},
-			  	files: {
-					'style.css':'sass/style.scss',
-				}
-			},
-		},
-		autoprefixer: {
+        pkg: grunt.file.readJSON('package.json'),
+        watch: {
+            files: ['sass/*.scss'],
+            tasks: 'sass:dev'
+        },
+        sass: {
+            dev: {
+                options : {
+                    style : 'expanded'
+                },
+                files: {
+                    'style.css':'sass/style.scss'
+                }
+            },
+            release: {
+                options : {
+                    style : 'expanded'
+                },
+                files: {
+                    'style.css':'sass/style.scss'
+                }
+            }
+        },
+        autoprefixer: {
             options: {
 				browsers: ['> 1%', 'last 2 versions', 'Firefox ESR', 'Opera 12.1', 'ie 9']
 			},
@@ -45,7 +43,7 @@ module.exports = function(grunt) {
                 config: '.csscomb.json'
             },
             files: {
-                'style.css': ['style.css'],
+                'style.css': ['style.css']
             }
 		},
 		concat: {
