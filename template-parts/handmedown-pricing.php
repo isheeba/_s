@@ -1,5 +1,5 @@
 <?php
-$price = get_post_meta( $post_id, 'saurabh_theme_price', true );
+$price = get_post_meta( $post_id, 'sheeba_theme_price', true );
 
 // formats price with 2 decimal places
 $price_decimal = number_format( $price, 2 );

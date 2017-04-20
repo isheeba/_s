@@ -12,7 +12,7 @@
  *
  * @global array $themecolors
  */
-function saurabh_theme_wpcom_setup() {
+function sheeba_theme_wpcom_setup() {
 	global $themecolors;
 
 	// Set theme colors for third party services.
@@ -26,4 +26,4 @@ function saurabh_theme_wpcom_setup() {
 		);
 	}
 }
-add_action( 'after_setup_theme', 'saurabh_theme_wpcom_setup' );
+add_action( 'after_setup_theme', 'sheeba_theme_wpcom_setup' );

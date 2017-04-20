@@ -5,15 +5,15 @@
 
 /**
  * Displays Location for a handmedown
- * 
+ *
  * @global int $post_id
  */
-function saurabh_theme_location() {
+function sheeba_theme_location() {
 
 	global $post_id;
 
-	$locality = get_post_meta( $post_id, 'saurabh_theme_locality', true );
-	$region = get_post_meta( $post_id, 'saurabh_theme_region', true );
+	$locality = get_post_meta( $post_id, 'sheeba_theme_locality', true );
+	$region = get_post_meta( $post_id, 'sheeba_theme_region', true );
 	?>
 	<address itemprop="location" itemscope itemtype="http://schema.org/Place">
 			<p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
