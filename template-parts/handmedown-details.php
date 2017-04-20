@@ -1,20 +1,48 @@
 <?php
-$price = get_post_meta( $post_id, 'sheeba_theme_price', true );
+/*
+"Age Range ( _ years to _ years)* => 2 inputs
+Brand => Free text
+Model => Free text
+Size/ Dimensions => Free Text
+Included Accessories => Free Text,
+Warranty Left => _ mo/year (toggle)
+Availability Timings of Seller => metas"
 
-// formats price with 2 decimal places
-$price_decimal = number_format( $price, 2 );
+ */
 
-// formats price according to the locale
-$price_localised = number_format_i18n( $price, 2 );
+// Retrieve the "From and To" years of the item.
+$yrs_from = get_post_meta( $post_id, 'sheeba_yrs_from', true );
+$yrs_to = get_post_meta( $post_id, 'sheeba_yrs_to', true );
+
+// Get Brand name - like Samsung, Apple, Woodland etc.
+$brand = get_post_meta( $post_id, 'sheeba_brand', true );
+
+// Get Model for the item.
+$model = get_post_meta( $post_id, 'sheeba_model', true );
+
+// Get dimension for the item.
+$dimension = get_post_meta( $post_id, 'sheeba_dimension', true );
+
+// Get Accessorie(s) for the item.
+$accessories = get_post_meta( $post_id, 'sheeba_accessories', true );
+
+// Get how many months and years left for warranty to expire.
+$warranty_mon = get_post_meta( $post_id, 'sheeba_warranty_mon', true );
+$warranty_yr = get_post_meta( $post_id, 'sheeba_warranty_yr', true );
+
 ?>
 <section class="hmd-details">
-		<div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="hmd-offer">
-				<span itemprop="priceCurrency" content="INR" class="hmd-currency">₹</span>
-				<span itemprop="price" content="<?php echo $price_decimal ?>" class="hmd-price">
-					<?php echo $price_localised ?>
-				</span>
-		</div>
-		<form class="hmd-cta-form">
-				<input type="submit" name="hmd-submit" value="">
-		</form>
+	<div itemprop="property" itemscope itemtype="http://meta.schema.org/Property" class="hmd-meta">
+		<span itemprop="typicalAgeRange" class="hmd-age-range">
+			<?php echo "$yrs_from - $yrs_to"; ?>
+		</span>
+		<span itemprop="brand" class="hmd-brand"> <?php echo $brand; ?> </span>
+		<span itemprop="model" class="hmd-model"> <?php echo $model; ?> </span>
+		<span itemprop="dimension" class="hmd-dimension"> <?php echo $dimension; ?> </span>
+		<span itemprop="accessories" class="hmd-accessories"> <?php echo $accessories; ?> </span>
+		<span itemprop="warranty" class="hmd-warranty">
+			<?php echo "$warranty_mon, $warranty_yr"; ?>
+		</span>
+
+	</div>
 </section>
