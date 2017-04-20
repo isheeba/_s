@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 /*--------------------------------------------------------------
 # Typography
@@ -23,3 +24,24 @@
 # Fields
 --------------------------------------------------------------*/
 @import "fields";
+=======
+@import "global";
+
+@import "typography-headings";
+@import "typography-copy";
+
+@import "text-inline";
+@import "text-links";
+@import "text-lists";
+@import "text-block";
+
+@import "document-headings";
+@import "document-sections";
+@import "document-embeds";
+
+@import "tables";
+
+@import "form-misc";
+@import "form-buttons";
+@import "form-inputs";
+>>>>>>> d1a4e20d5c433369299dcfc05e2d0daef489f8a1

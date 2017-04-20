@@ -3,6 +3,11 @@
  * The template for displaying archive pages
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
+ * 
+ * @author Saurabh Shukla <saurabh@yapapaya.com>
+ * @license GPL 2.0
+ * 
+ * @since 1.0
  *
  * @package _s
  */
