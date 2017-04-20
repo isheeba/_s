@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 /nbproject/*
 .sass-cache
-=======
 nbproject/*
 */.DS_Store
 node_modules/*
->>>>>>> d1a4e20d5c433369299dcfc05e2d0daef489f8a1

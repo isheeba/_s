@@ -1,4 +1,5 @@
 'use strict';
+
 module.exports = function(grunt) {
 
 	// load all tasks
@@ -45,7 +46,7 @@ module.exports = function(grunt) {
                 config: '.csscomb.json'
             },
             files: {
-                'style.css': ['style.css'],
+                'style.css': ['style.css']
             }
 		},
 		concat: {
