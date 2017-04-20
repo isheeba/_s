@@ -1,32 +1,28 @@
 h1, h2, h3, h4, h5, h6 {
-<<<<<<< HEAD:sass/typography/_headings.scss
-    clear: both;
+	clear: both;
+	color: $heading-color;
 }
 
 h1{
-    @include font-size(6.854);
+	@include font-size(6.854);
 }
 
 h2{
-    @include font-size(4.236);
+	@include font-size(4.236);
 }
 
 h3{
-    @include font-size(2.618);
+	@include font-size(2.618);
 }
 
 h4, h5, h6{
-    @include font-size(1.618);
+	@include font-size(1.618);
 }
 
 h4{
-    text-transform: uppercase;
+	text-transform: uppercase;
 }
 
 h6{
-    font-style: italic;
-=======
-	clear: both;
-	color: $heading-color;
->>>>>>> d1a4e20d5c433369299dcfc05e2d0daef489f8a1:sass/atoms/_document-headings.scss
+	font-style: italic;
 }

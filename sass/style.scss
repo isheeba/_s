@@ -42,33 +42,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
         ## Captions
         ## Galleries
 --------------------------------------------------------------*/
-<<<<<<< HEAD
 @import "config/variables/variables";
 @import "config/mixins";
-=======
->>>>>>> d1a4e20d5c433369299dcfc05e2d0daef489f8a1
+
 
 /*--------------------------------------------------------------
 # Configuration (normalize, variables, mixins)
 --------------------------------------------------------------*/
-<<<<<<< HEAD
-@import "config/normalize";
-
-/*--------------------------------------------------------------
-# Atoms
---------------------------------------------------------------*/
-@import "atoms/atoms";
-
-/*--------------------------------------------------------------
-# Molecules
---------------------------------------------------------------*/
-@import "molecules/molecules";
-
-/*--------------------------------------------------------------
-# Organism
---------------------------------------------------------------*/
-@import "organism/organism";
-=======
 @import "config/config";
 
 /*--------------------------------------------------------------
@@ -90,4 +70,4 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Templates
 --------------------------------------------------------------*/
 /*@import "templates/templates";*/
->>>>>>> d1a4e20d5c433369299dcfc05e2d0daef489f8a1
+
