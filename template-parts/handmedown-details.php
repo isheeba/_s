@@ -43,6 +43,5 @@ $warranty_yr = get_post_meta( $post_id, 'sheeba_warranty_yr', true );
 		<span itemprop="warranty" class="hmd-warranty">
 			<?php echo "$warranty_mon, $warranty_yr"; ?>
 		</span>
-
 	</div>
 </section>
